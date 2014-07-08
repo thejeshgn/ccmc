@@ -1,0 +1,264 @@
+Now for zone=West
++++++++++++++++++++++++++++++++++++++++++++++=
+[<body>
+<div id="container">
+<div id="header">
+<div id="logo"></div>
+<div id="search" style="display:none">
+<table border="0" cellpadding="0" cellspacing="1" width="100%">
+<tr><td nowrap="nowrap">
+<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=45&amp;Itemid=40" id="active_menu">Home</a>
+<span class="mainlevel"> | </span>
+<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=24&amp;Itemid=38">Sitemap</a>
+<span class="mainlevel"> | </span>
+<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=58&amp;Itemid=43">Contacts</a>
+</td></tr></table>
+<form action="index.php" method="post">
+<div class="search">
+<input alt="Search" class="inputbox" id="mod_search_searchword" maxlength="20" name="searchword" onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" size="20" type="text" value="search..."/>
+</div>
+</form>
+</div>
+<div id="social-net" style="display:none"><a href="http://www.facebook.com/pages/Cbecorp/187855327919362" target="_blank"><img src="images/facebook-icon.png"/></a>   <a href="http://twitter.com/Cbecorp" target="_blank"><img src="images/twitter-icon.png"/></a></div>
+</div>
+<div id="menu">
+<div class="chromestyle" id="chromemenu">
+<ul>
+<li><a href="https://www.ccmc.gov.in/ccmc/index.php">Home</a></li>
+<!--	<li><a href="MyCorpServiceTax.asp">My Taxes</a></li>
+		<li><a href="#" rel="dropmenu2">Development Works</a></li>-->
+<li><a href="#" rel="dropmenu3">Revenue Items</a></li>
+<li><a href="#" rel="dropmenu4">Collections</a></li>
+<!-- 	<li><a href="#" rel="dropmenu5">Collection Centers</a></li>		 -->
+<li><a href="#" rel="dropmenu6">Transactions</a></li>
+<li><a href="frmAdditionalHome.asp">Reports</a></li>
+<li><a href="#" rel="dropmenu7">DCB</a></li>
+<li><a href="frmlegallogout.asp">Sign out</a></li>
+</ul>
+</div>
+<!--2nd drop down menu -->
+<div class="dropmenudiv" id="dropmenu2" style="width: 250px;">
+<a href="frmOngoingWorks.asp">Ongoing Works</a>
+<a href="frmOngoingWorksByOff.asp">Ongoing Works By Ward</a>
+<a href="frmCompletedWorks.asp">Completed Works</a>
+<a href="frmCompletedWorksByOff.asp">Completed Works By Ward </a>
+<a href="frmfinyearwisecompletedworks.asp">Completed Works By Financial Year</a>
+<a href="frmGenAbsractList.asp">General Abstract</a>
+<a href="frmAeJeWorks.asp">Works By  AE / JE</a>
+<a href="frmDetailedDevelopmentWorks.asp">Detailed Work Report</a>
+<a href="frmWorkAbstract.asp">Detailed Work Abstract</a>
+<a href="repDateWiseReport.asp">Ongoing Works Entry - Between Date</a>
+<a href="frmBillPendingCompleted.asp">Bill - Detailed Report</a>
+<a href="frmTenderAllotView.asp">Tender Results</a>
+<a href="frmTenderView.asp">Tender Announcement</a>
+<a href="frmCSanction.asp">C - Sanction Details</a>
+<a href="javascript:fnrgctamil()">List of Registered Contractors</a>
+<a href="frmjnnurm.asp">JNNURM <img src="images/neww.gif"/> </a>
+<a href="frmViewPlumber.asp">Plumbers List</a>
+<a href="frmCompletedWorks1.asp">Completed Works Before 2005-2006</a>
+</div>
+<!--3rd drop down menu -->
+<div class="dropmenudiv" id="dropmenu3" style="width: 250px;">
+<a href="repAssesseeDet.asp?type=P">Property Tax</a>
+<a href="repAssesseeDet.asp?type=W">Water Charges</a>
+<a href="repVLTDet.asp">Vacant Land Tax</a>
+<a href="repNTDet.asp">Non Tax</a>
+<a href="repNTDet_exe.asp">Non Tax-Excluding Govt Item &amp; Court Case</a>
+<a href="repNTDet_court.asp">Non Tax Court Case</a>
+<a href="repNTDet_Govt.asp">Non Tax Govt Item</a>
+<a href="repNTDet_TNEB.asp">Non Tax TNEB</a>
+<a href="repNTDet_Arrear.asp">Non Tax-Demolished</a>
+<a href="repNTDet_1.asp">Non Tax Annual Lease Item</a>
+<a href="RepPFTDet.asp">Professional Tax</a>
+<a href="RepDNOTrade.asp">D&amp;O Trades</a>
+<a href="RepPFATradeDet.asp">PFA Trades</a>
+<a href="repNTDet_.asp">MISC-1045(7) Garbage</a>
+<a href="repNTDet_FA.asp">Bus Shelter</a>
+<a href="repNTDet_FP.asp">Foot Path</a>
+<a href="repNTDet_OFC.asp">1100(2) - Annual Track Rent Optic Cables</a>
+</div>
+<!--4rd drop down menu -->
+<div class="dropmenudiv" id="dropmenu4" style="width: 250px;">
+<a href="frmBankSelection.asp">Bankwise</a>
+<a href="frmFECSelectiont.asp">Facilitation Centerwise</a>
+<a href="frmZoneSelection1_newt.asp">Zonewise</a>
+<a href="frmZoneWiseBankSelection.asp">Zonewise - Bank</a>
+<a href="frmWardSelection.asp">Wardwise</a>
+<a href="frmColServiceSelection.asp">Servicewise</a>
+<a href="frmbreakupview.asp">Break Up View</a>
+<a href="cbrv.asp">BRV Statements</a>
+<a href="repOverAllCollection.asp">Overall Collection</a>
+<a href="frmFECSelectionCC.asp">Credit Card Collection</a>
+<a href="repipay.asp">I.P.G Collection</a>
+</div>
+<!--5rd drop down menu -->
+<!-- 	<div id="dropmenu5" class="dropmenudiv" style="width: 250px;">
+						
+			<a href="frmVwBanks.asp">List of Banks</a>
+			<a href="frmVwFEC.asp">Facilitation Centers</a>
+			<a href="frmCreditCardCenters.asp">Credit Card Collection Centers</a>
+		</div> -->
+<!--6rd drop down menu -->
+<div class="dropmenudiv" id="dropmenu6" style="width: 250px;">
+<a href="FrmVwServiceTransaction.asp">Datewise</a>
+<a href="frmCollectionsReport.asp">Monthwise</a>
+<a href="FrmVwTransactionsByBank.asp">Bankwise</a>
+<a href="FrmVwTransactionsByFc.asp">Facilitation Centerwise</a>
+<a href="frmColCompSelection.asp">Collection Comparisions</a>
+</div>
+<!--7rd drop down menu -->
+<div class="dropmenudiv" id="dropmenu7" style="width: 250px;">
+<a href="frmsdcb.asp">YEAR WISE DCB</a>
+<a href="frmsdcbwd.asp">WARD WISE DCB</a>
+<a href="frmsdcb1213new_.asp">SUPPLEMENTARY DCB</a>
+<a href="dcblogin.asp">DCB RUN</a>
+<a href="dcb1new.asp">SUPPLEMENTARY DCB RUN</a>
+</div>
+<script type="text/javascript">
+
+		cssdropdown.startchrome("chromemenu")
+
+		</script>
+</div>
+<div id="bgdivId" style="display:none;"><img src="images/ccmc-bg1.jpg"/></div>
+<script type="text/javascript">
+		if(document.URL!=null && document.URL!=undefined
+			&& document.URL.indexOf("pageheader1.asp")>0)
+		{
+			document.getElementById("bgdivId").style.display = "";            
+		}else{
+			document.getElementById("bgdivId").style.display = "none";
+		}
+	</script>
+</div></body>]
+<body>
+<div id="container">
+<div id="header">
+<div id="logo"></div>
+<div id="search" style="display:none">
+<table border="0" cellpadding="0" cellspacing="1" width="100%">
+<tr><td nowrap="nowrap">
+<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=45&amp;Itemid=40" id="active_menu">Home</a>
+<span class="mainlevel"> | </span>
+<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=24&amp;Itemid=38">Sitemap</a>
+<span class="mainlevel"> | </span>
+<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=58&amp;Itemid=43">Contacts</a>
+</td></tr></table>
+<form action="index.php" method="post">
+<div class="search">
+<input alt="Search" class="inputbox" id="mod_search_searchword" maxlength="20" name="searchword" onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" size="20" type="text" value="search..."/>
+</div>
+</form>
+</div>
+<div id="social-net" style="display:none"><a href="http://www.facebook.com/pages/Cbecorp/187855327919362" target="_blank"><img src="images/facebook-icon.png"/></a>   <a href="http://twitter.com/Cbecorp" target="_blank"><img src="images/twitter-icon.png"/></a></div>
+</div>
+<div id="menu">
+<div class="chromestyle" id="chromemenu">
+<ul>
+<li><a href="https://www.ccmc.gov.in/ccmc/index.php">Home</a></li>
+<!--	<li><a href="MyCorpServiceTax.asp">My Taxes</a></li>
+		<li><a href="#" rel="dropmenu2">Development Works</a></li>-->
+<li><a href="#" rel="dropmenu3">Revenue Items</a></li>
+<li><a href="#" rel="dropmenu4">Collections</a></li>
+<!-- 	<li><a href="#" rel="dropmenu5">Collection Centers</a></li>		 -->
+<li><a href="#" rel="dropmenu6">Transactions</a></li>
+<li><a href="frmAdditionalHome.asp">Reports</a></li>
+<li><a href="#" rel="dropmenu7">DCB</a></li>
+<li><a href="frmlegallogout.asp">Sign out</a></li>
+</ul>
+</div>
+<!--2nd drop down menu -->
+<div class="dropmenudiv" id="dropmenu2" style="width: 250px;">
+<a href="frmOngoingWorks.asp">Ongoing Works</a>
+<a href="frmOngoingWorksByOff.asp">Ongoing Works By Ward</a>
+<a href="frmCompletedWorks.asp">Completed Works</a>
+<a href="frmCompletedWorksByOff.asp">Completed Works By Ward </a>
+<a href="frmfinyearwisecompletedworks.asp">Completed Works By Financial Year</a>
+<a href="frmGenAbsractList.asp">General Abstract</a>
+<a href="frmAeJeWorks.asp">Works By  AE / JE</a>
+<a href="frmDetailedDevelopmentWorks.asp">Detailed Work Report</a>
+<a href="frmWorkAbstract.asp">Detailed Work Abstract</a>
+<a href="repDateWiseReport.asp">Ongoing Works Entry - Between Date</a>
+<a href="frmBillPendingCompleted.asp">Bill - Detailed Report</a>
+<a href="frmTenderAllotView.asp">Tender Results</a>
+<a href="frmTenderView.asp">Tender Announcement</a>
+<a href="frmCSanction.asp">C - Sanction Details</a>
+<a href="javascript:fnrgctamil()">List of Registered Contractors</a>
+<a href="frmjnnurm.asp">JNNURM <img src="images/neww.gif"/> </a>
+<a href="frmViewPlumber.asp">Plumbers List</a>
+<a href="frmCompletedWorks1.asp">Completed Works Before 2005-2006</a>
+</div>
+<!--3rd drop down menu -->
+<div class="dropmenudiv" id="dropmenu3" style="width: 250px;">
+<a href="repAssesseeDet.asp?type=P">Property Tax</a>
+<a href="repAssesseeDet.asp?type=W">Water Charges</a>
+<a href="repVLTDet.asp">Vacant Land Tax</a>
+<a href="repNTDet.asp">Non Tax</a>
+<a href="repNTDet_exe.asp">Non Tax-Excluding Govt Item &amp; Court Case</a>
+<a href="repNTDet_court.asp">Non Tax Court Case</a>
+<a href="repNTDet_Govt.asp">Non Tax Govt Item</a>
+<a href="repNTDet_TNEB.asp">Non Tax TNEB</a>
+<a href="repNTDet_Arrear.asp">Non Tax-Demolished</a>
+<a href="repNTDet_1.asp">Non Tax Annual Lease Item</a>
+<a href="RepPFTDet.asp">Professional Tax</a>
+<a href="RepDNOTrade.asp">D&amp;O Trades</a>
+<a href="RepPFATradeDet.asp">PFA Trades</a>
+<a href="repNTDet_.asp">MISC-1045(7) Garbage</a>
+<a href="repNTDet_FA.asp">Bus Shelter</a>
+<a href="repNTDet_FP.asp">Foot Path</a>
+<a href="repNTDet_OFC.asp">1100(2) - Annual Track Rent Optic Cables</a>
+</div>
+<!--4rd drop down menu -->
+<div class="dropmenudiv" id="dropmenu4" style="width: 250px;">
+<a href="frmBankSelection.asp">Bankwise</a>
+<a href="frmFECSelectiont.asp">Facilitation Centerwise</a>
+<a href="frmZoneSelection1_newt.asp">Zonewise</a>
+<a href="frmZoneWiseBankSelection.asp">Zonewise - Bank</a>
+<a href="frmWardSelection.asp">Wardwise</a>
+<a href="frmColServiceSelection.asp">Servicewise</a>
+<a href="frmbreakupview.asp">Break Up View</a>
+<a href="cbrv.asp">BRV Statements</a>
+<a href="repOverAllCollection.asp">Overall Collection</a>
+<a href="frmFECSelectionCC.asp">Credit Card Collection</a>
+<a href="repipay.asp">I.P.G Collection</a>
+</div>
+<!--5rd drop down menu -->
+<!-- 	<div id="dropmenu5" class="dropmenudiv" style="width: 250px;">
+						
+			<a href="frmVwBanks.asp">List of Banks</a>
+			<a href="frmVwFEC.asp">Facilitation Centers</a>
+			<a href="frmCreditCardCenters.asp">Credit Card Collection Centers</a>
+		</div> -->
+<!--6rd drop down menu -->
+<div class="dropmenudiv" id="dropmenu6" style="width: 250px;">
+<a href="FrmVwServiceTransaction.asp">Datewise</a>
+<a href="frmCollectionsReport.asp">Monthwise</a>
+<a href="FrmVwTransactionsByBank.asp">Bankwise</a>
+<a href="FrmVwTransactionsByFc.asp">Facilitation Centerwise</a>
+<a href="frmColCompSelection.asp">Collection Comparisions</a>
+</div>
+<!--7rd drop down menu -->
+<div class="dropmenudiv" id="dropmenu7" style="width: 250px;">
+<a href="frmsdcb.asp">YEAR WISE DCB</a>
+<a href="frmsdcbwd.asp">WARD WISE DCB</a>
+<a href="frmsdcb1213new_.asp">SUPPLEMENTARY DCB</a>
+<a href="dcblogin.asp">DCB RUN</a>
+<a href="dcb1new.asp">SUPPLEMENTARY DCB RUN</a>
+</div>
+<script type="text/javascript">
+
+		cssdropdown.startchrome("chromemenu")
+
+		</script>
+</div>
+<div id="bgdivId" style="display:none;"><img src="images/ccmc-bg1.jpg"/></div>
+<script type="text/javascript">
+		if(document.URL!=null && document.URL!=undefined
+			&& document.URL.indexOf("pageheader1.asp")>0)
+		{
+			document.getElementById("bgdivId").style.display = "";            
+		}else{
+			document.getElementById("bgdivId").style.display = "none";
+		}
+	</script>
+</div></body>
