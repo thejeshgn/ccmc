@@ -1,5 +1,9 @@
-1. Ward info exists. Not getting.
-Get Street info for each ward
+1. Getting ward info
+	 --Ward info exists. Not getting.
+2. Get Street info for each ward
+	 --No wards to continue...
+3. Getting Property Tax
+02'^WD-05'^24
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -177,10 +181,14 @@ function fnrgctamil()
 </head>
 <link rel="stylesheet" href="hi.css">	
 <link rel="stylesheet" href="css/ccmc-style.css" type="text/css" />
+<link rel="stylesheet" href="css/ccmc-style.css" type="text/css" />
 <body onUnLoad="fnUnloadRepWin()" class="new">
 <form name="frmAssDetails">
-
+<input type="hidden" name="hdnCode" value="">
+<center>
 		
+
+
 <SCRIPT LANGUAGE="JavaScript1.2" SRC="PrintReport.js" TYPE='text/javascript'></SCRIPT>
 <script language="Javascript1.2">
 	function fnPrint()
@@ -189,18 +197,17 @@ function fnrgctamil()
 		
 		var cssStyleSheet = 'hi';
 
-		var header = '<table border="0" width="700" cellspacing="0" align=center><tr height=50>';
-		header = header + '<td align=center width="100%"><b>Property Tax -';
-		header = header + 'Street wise Assessee Details for WD-05<br>';
-		header = header + ' As On<font color=red> 8-Jul-2014&nbsp;1:43:45 PM</font></b></th></b></td></tr></table>';
+		var header = '<table border="0"  cellspacing="0" align=center><tr height=50>';
+		header = header + '<td align=center width="100%"><b>Property Tax - Assessee Details for ABIRAMI NAGAR in WD-05<br>';
+		header = header + 'As On<font color=red> 9-Jul-201412:36:11 PM</font></b></th></b></td></tr></table>';
 		var content = document.getElementById("d1");
 
 		fnRepPrint(title,cssStyleSheet,header,content);
 	}    
 </script>
-<input type="hidden" name="hdnCode" value="02'^WD-05">
-<table width="780" cellpadding="0" cellspacing="0" border="0">
-	<tr><td align="left"><font style="font-family:verdana;font-size=11px"><b>00&nbsp;:&nbsp;00&nbsp;:&nbsp;141</b></font></td>
+
+<table  cellpadding="0" cellspacing="2" border="0">
+	<tr><td align="left"><b>00&nbsp;:&nbsp;00&nbsp;:&nbsp;156</b></td>
 	<td align="right">
 		
 			<a href="Javascript:fnPrint();" title="Print..." onmouseover="window.status='Print...';return true;" onmouseout="window.status='';return true;"><img src="images/icon-printer.gif" border="0" X-CLARIS-USEIMAGEHEIGHT X-CLARIS-USEIMAGEWIDTH  title="Print..." onmouseover="window.status='Print...'" onmouseout="window.status=''"></a>
@@ -208,805 +215,93 @@ function fnrgctamil()
 	</td></tr>	
 </table>
 
-	  <table width="100%" border=0 align="center">
+	  <table border=0 align="center">
       <tr>
         <td align=center width="100%"><b>
         
 				Property Tax - 
 		
-			 Street wise Assessee Details for WD-05<br>
-        As On<font color=red> 8-Jul-2014&nbsp;1:43:45 PM</font></b></th></b></td>
+         	 Assessee Details for ABIRAMI NAGAR in WD-05<br>
+        As On<font color=red> 9-Jul-201412:36:11 PM</font></b></th></b></td>
       </tr>
-      </table> <div id="d1" name="d1"><br>
+      </table>
       
-      <table cellspacing="2" cellpadding="0" width="400" align="center" class="tableStyle">
-      <tr >
-		<td rowspan=1 class="title">S.No</td>
-		
-			<td rowspan=1 class="title">Street</th>
-			
-		<th colspan=1 class="title">No.Of Assessees</th>
-	  </tr>
-	  
-			<tr >
-			<td  align=center>1</td>
- 			<td  align=left nowrap>ABIRAMI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','24  ')">1</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>2</td>
- 			<td  align=left nowrap>ABIRAMI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','59  ')">27</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>3</td>
- 			<td  align=left nowrap>ASHOK NAGAR (EAST)</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','84  ')">268</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>4</td>
- 			<td  align=left nowrap>ASHOK NAGAR WEST</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','33  ')">115</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>5</td>
- 			<td  align=left nowrap>ASHOK NAGAR WEST,NORTH</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','21  ')">328</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>6</td>
- 			<td  align=left nowrap>ASHOK NAGER FIRST FLOOR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','101 ')">3</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>7</td>
- 			<td  align=left nowrap>BALAN NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','55  ')">197</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>8</td>
- 			<td  align=left nowrap>BHARATHI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','48  ')">92</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>9</td>
- 			<td  align=left nowrap>CHERAN NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','82  ')">55</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>10</td>
- 			<td  align=left nowrap>CHERAN NAGAR A B C EXTN</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','53  ')">221</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>11</td>
- 			<td  align=left nowrap>CHERAN NAGAR BACKSIDE</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','63  ')">79</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>12</td>
- 			<td  align=left nowrap>CHOZHAN NAGAR </td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','5   ')">57</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>13</td>
- 			<td  align=left nowrap>COOPERATIVE COLONY</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','49  ')">81</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>14</td>
- 			<td  align=left nowrap>DEVI GARDEN</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','7   ')">47</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>15</td>
- 			<td  align=left nowrap>DOCTOR NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','66  ')">11</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>16</td>
- 			<td  align=left nowrap>GANDHI NAGAR (CHERAN NAGAR BACK)</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','67  ')">19</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>17</td>
- 			<td  align=left nowrap>GOUNDAMPALAYAM</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','20  ')">4</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>18</td>
- 			<td  align=left nowrap>I T I NAGAR AND BACKSIDE</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','79  ')">75</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>19</td>
- 			<td  align=left nowrap>JAWAHAR NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','4   ')">71</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>20</td>
- 			<td  align=left nowrap>JAYAM NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','9   ')">87</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>21</td>
- 			<td  align=left nowrap>JEM NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','36  ')">12</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>22</td>
- 			<td  align=left nowrap>JOSEPH NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','62  ')">3</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>23</td>
- 			<td  align=left nowrap>JOSEPH NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','87  ')">9</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>24</td>
- 			<td  align=left nowrap>K M RAMASAMY NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','77  ')">24</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>25</td>
- 			<td  align=left nowrap>KALIYAMMAL NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','64  ')">14</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>26</td>
- 			<td  align=left nowrap>KALIYAPPAN NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','71  ')">7</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>27</td>
- 			<td  align=left nowrap>KALPANA THEATRE BACK SIDE</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','88  ')">8</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>28</td>
- 			<td  align=left nowrap>KANNAMMAL NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','15  ')">64</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>29</td>
- 			<td  align=left nowrap>KANNANAMMAL NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','46  ')">12</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>30</td>
- 			<td  align=left nowrap>KANNIYA NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','11  ')">52</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>31</td>
- 			<td  align=left nowrap>KANTHA KONAR NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','10  ')">69</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>32</td>
- 			<td  align=left nowrap>KINATHU THOTTAM</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','25  ')">1</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>33</td>
- 			<td  align=left nowrap>LAKSHMI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','22  ')">31</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>34</td>
- 			<td  align=left nowrap>LAUREL SCHOOL ROAD</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','50  ')">20</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>35</td>
- 			<td  align=left nowrap>M. K. P. GARDEN</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','76  ')">16</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>36</td>
- 			<td  align=left nowrap>M.T.P.ROAD</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','65  ')">30</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>37</td>
- 			<td  align=left nowrap>MAHALAKSHMI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','72  ')">7</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>38</td>
- 			<td  align=left nowrap>MAHARAJA AVENUE (VAIKO NAGAR)</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','8   ')">20</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>39</td>
- 			<td  align=left nowrap>MANAL THOTTAM</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','70  ')">16</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>40</td>
- 			<td  align=left nowrap>MANIYAKARA THOTTAM</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','23  ')">3</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>41</td>
- 			<td  align=left nowrap>MCP NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','43  ')">26</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>42</td>
- 			<td  align=left nowrap>MEENAKSHI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','34  ')">2</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>43</td>
- 			<td  align=left nowrap>MEIKANDAAR STREET</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','78  ')">1</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>44</td>
- 			<td  align=left nowrap>MTP ROAD</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','92  ')">169</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>45</td>
- 			<td  align=left nowrap>MULLAI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','29  ')">75</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>46</td>
- 			<td  align=left nowrap>MUNICIPALITY  OFFICE BACK SIDE</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','17  ')">11</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>47</td>
- 			<td  align=left nowrap>MURUGAN NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','89  ')">190</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>48</td>
- 			<td  align=left nowrap>MURUGAN NAGAR EXTN,</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','85  ')">3</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>49</td>
- 			<td  align=left nowrap>NAGAPPA COLONY</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','57  ')">75</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>50</td>
- 			<td  align=left nowrap>NEW BALAJI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','38  ')">21</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>51</td>
- 			<td  align=left nowrap>ONAPPALAYAM ROAD </td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','96  ')">1</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>52</td>
- 			<td  align=left nowrap>PANCHAYAT OFFICE ROAD</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','35  ')">41</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>53</td>
- 			<td  align=left nowrap>PERIYAKADU STREET 1,2</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','44  ')">193</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>54</td>
- 			<td  align=left nowrap>PREM AVENUE - SAKTHI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','3   ')">14</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>55</td>
- 			<td  align=left nowrap>PRIME AVENUE</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','13  ')">22</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>56</td>
- 			<td  align=left nowrap>RAJU NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','28  ')">7</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>57</td>
- 			<td  align=left nowrap>RAM NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','45  ')">73</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>58</td>
- 			<td  align=left nowrap>RAMASAMY NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','73  ')">5</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>59</td>
- 			<td  align=left nowrap>RANGA GARDENS</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','39  ')">9</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>60</td>
- 			<td  align=left nowrap>RENU GOUNDER LANE</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','86  ')">2</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>61</td>
- 			<td  align=left nowrap>S P NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','2   ')">198</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>62</td>
- 			<td  align=left nowrap>SAKTHI GARDEN</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','47  ')">101</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>63</td>
- 			<td  align=left nowrap>SAKTHI GARDENS - II</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','40  ')">26</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>64</td>
- 			<td  align=left nowrap>SARAVANA NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','54  ')">108</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>65</td>
- 			<td  align=left nowrap>SIVA NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','19  ')">17</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>66</td>
- 			<td  align=left nowrap>SIVA NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','56  ')">131</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>67</td>
- 			<td  align=left nowrap>SP NAGAR (BACK SIDE)</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','32  ')">2</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>68</td>
- 			<td  align=left nowrap>SPM GARDEN</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','75  ')">2</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>69</td>
- 			<td  align=left nowrap>SPM NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','26  ')">13</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>70</td>
- 			<td  align=left nowrap>SPM NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','69  ')">25</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>71</td>
- 			<td  align=left nowrap>SPR HOMES</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','74  ')">10</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>72</td>
- 			<td  align=left nowrap>SRI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','12  ')">109</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>73</td>
- 			<td  align=left nowrap>SRI RAM THIRUVENGADAM NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','6   ')">7</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>74</td>
- 			<td  align=left nowrap>SRI SAKTHI GARDEN</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','37  ')">46</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>75</td>
- 			<td  align=left nowrap>ST. JOSEPHS NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','95  ')">9</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>76</td>
- 			<td  align=left nowrap>SUBBAIAH GOUNDER THOTTOM</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','93  ')">3</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>77</td>
- 			<td  align=left nowrap>T.V.S NAGAR ROAD</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','14  ')">88</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>78</td>
- 			<td  align=left nowrap>THAMARAI NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','91  ')">86</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>79</td>
- 			<td  align=left nowrap>THENDRAL NAGAR (MANAL THOTTAM)</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','80  ')">162</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>80</td>
- 			<td  align=left nowrap>THIRUVALLUVAR NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','61  ')">5</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>81</td>
- 			<td  align=left nowrap>THIYAGI ST</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','1   ')">33</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>82</td>
- 			<td  align=left nowrap>UNION ROAD</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','99  ')">3</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>83</td>
- 			<td  align=left nowrap>UNION ROAD (NORTH),ISWARIYA MARUDAM APPT</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','94  ')">78</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>84</td>
- 			<td  align=left nowrap>VAIKO NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','41  ')">9</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>85</td>
- 			<td  align=left nowrap>VENKIDASAMY NAGAR (MPT ROAD)</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','81  ')">8</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>86</td>
- 			<td  align=left nowrap>VINAIYAGAR KOVIL ST</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','18  ')">1</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>87</td>
- 			<td  align=left nowrap>VKN NAGAR</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','31  ')">1</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>88</td>
- 			<td  align=left nowrap>z</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','52  ')">1</a></td>				
-			
-			</tr>
-			
-			<tr >
-			<td  align=center>89</td>
- 			<td  align=left nowrap>z</td>
-			
-				<td  align=right nowrap><a href="javascript:fnSubmit2('P','83  ')">2</a></td>				
-			
-			</tr>
-			
-			<tr >
-				<td colspan=2 align=center><b>TOTAL</b></td>
-				<td align=right>4480</b></td>
-			</tr>
-		</table>
-	  </div>
-	  
-	  <br><center><input type=button value=" Back " class="mainoption" onClick="fnBack();" id=button1 name=button1 class="mainoption">
-	  
-	</form>
+      <div id="d1" name="d1"><br>
+      
+    
+	<font face="Verdana" size="1" color="red" ><b>*</b></font>
+	<font face="Verdana" size="1" color="#000080">-Category : <b>A</b> - Appeal , <b>C</b> - Collectable , <b>G</b> - Goverment , <b>I</b> - Institutions , <b>S</b> - Sick Mill</font><br><br>
+	<table border=0 width=100% cellpadding =0 cellspacing=0>
+	<tr><td>	
+	<table border=0 cellpadding =0 cellspacing=2 Class="tableStyle">	  
+		<tr>
+			<th align=center class="title" title="#">#</th>
+			<th align=center class="title" title="Ward">Ward</th>
+			<th align=center class="title"" title="Assessment No.">Asst No.</th>			
+			<th align=center class="title" title="Assessee Name & Address">Name&Address</th>
+			<th align=center class="title" title="Category">Category</th>
+			<th align=center class="title" title="Half-Yearly Tax Amount">Half-Yearly<br>Tax(in Rs.)</th>	
+			<th align=center class="title" title="Penalty">Penalty<br>(in Rs.)</th>	
+			<th align=center class="title" title="Total Amount">Total<br>(in Rs.)</th>
+			<th align=center class="title" title="Total Amount">Type of Building</th>
+		</tr>
+	    	  
+		<tr>
+			<td  align=center width="5%"><font face="Verdana" size="1" color="#000080">1</font></td>
+			<td  align=center >WD-05
+			</td> 
+			<td  align=center ><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','11170406','02','WD-05','Property')" title="Click here to view the dues">11170406</a></font></td>		
+			<td  align=left ><font face="Verdana" size="1" color="#000080">N.KARUPUSAMY,<br>138,<br>ABIRAMI NAGAR,<br>town</font></td> 
+			<td  align=center width="3%">C</td>
+			<td  align=right >418.00</td> 
+			<td  align=right >0.00</td>
+			<td  align=right >418.00</td>
+			<td  align=right  nowrap>3.5 RESIDENTIAL</td>
+		</tr>
+	  	  
+	</table>
+
+</td></tr></table></div>
+
+</form>
+<script language="Javascript1.2">
+	var objPopUp;
+	function fnLink(varFlag,varAssNo,varZone,varWard,varDueType)
+	{
+		if(typeof objPopUp == "object")
+			objPopUp.close();
+		//objPopUp= window.open('repKnowMyDuesWin.asp?hdflag=' + varFlag + '&parAssNo=' + varAssNo + '&parZone=' + varZone + '&parWard=' + varWard + '&parDueType=' + varDueType,'frmAssesseeDetails','WIDTH=700,HEIGHT=235,TOP=210,LEFT=35,scrollbars=yes,resizeable=yes,menubar=no,toolbars=0,status=no')
+		document.frmAssDetails.action='repKnowMyDuesWin.asp?hdflag=' + varFlag + '&parAssNo=' + varAssNo + '&parZone=' + varZone + '&parWard=' + varWard + '&parDueType=' + varDueType;
+		document.frmAssDetails.method="post";
+		document.frmAssDetails.submit();
+	}	
+
+	function subOnUnLoad()
+	{
+		if(typeof objPopUp == "object")
+			objPopUp.close();
+	}
+</script>
+<br><center><input type=button value=" Back " class="mainoption" onClick="fnBack();" id=button1 name=button1>
 </body>
-<script>
-	//For Goto Ward Wise
-	function fnSubmit(varTypeName,varCode)
-	{
-		document.frmAssDetails.hdnCode.value = varCode ;
-		document.frmAssDetails.action = "repAssesseeDet.asp?type=" + varTypeName;
-		document.frmAssDetails.method = "post";
-		document.frmAssDetails.submit();
-	}
-	
-	function fnSubmit1(varTypeName,varCode,VarZone)
-	{
-		document.frmAssDetails.hdnCode.value = VarZone + "'^" + varCode ;
-		document.frmAssDetails.action = "repAssesseeDet.asp?type=" + varTypeName;
-		document.frmAssDetails.method = "post";
-		document.frmAssDetails.submit();
-	}
-	
-	function fnSubmit3(varTypeName,varCode,VarZone)
-	{
-		document.frmAssDetails.hdnCode.value = VarZone + "'^" + varCode ;
-		document.frmAssDetails.action = "repAssesseeDet.asp?type=" + varTypeName;
-		document.frmAssDetails.method = "post";
-		document.frmAssDetails.submit();
-	}
-	
-	function fnSubmit2(varTypeName,varCode)
-	{
-		var vCode = document.frmAssDetails.hdnCode.value;
-		if(vCode=="")
-			document.frmAssDetails.hdnCode.value = varCode;
-		else
-			document.frmAssDetails.hdnCode.value = vCode + "'^" + varCode ;
-		document.frmAssDetails.action = "repAssesseeDet1.asp?type=" + varTypeName;
-		document.frmAssDetails.method = "post";
-		document.frmAssDetails.submit();
-	}
-
-	function fnSubmit3(varTypeName,varCode)
-	{
-		document.frmAssDetails.hdnCode.value = varCode ;
-		document.frmAssDetails.action = "repAssesseeDet2.asp?type=" + varTypeName;
-		document.frmAssDetails.method = "post";
-		document.frmAssDetails.submit();
-	}
-
-	//Function for Go To Back Screen
+<script language="Javascript1.2">
 	function fnBack()
 	{
-		document.frmAssDetails.hdnCode.value = "02";
+		document.frmAssDetails.hdnCode.value = "02" + "'^" + "WD-05";
+		document.frmAssDetails.action="repAssesseeDet.asp?Type=P";
+		document.frmAssDetails.method="post";
+		document.frmAssDetails.submit();
+	}
+	
+	function fnWardSubmit()
+	{
+		document.frmAssDetails.hdnCode.value = "02"
 		document.frmAssDetails.action="repAssesseeDet.asp?Type=P";
 		document.frmAssDetails.method="post";
 		document.frmAssDetails.submit();
 	}
 </script>
-</html>
+</html>		  						
    <div id="content">
 
         	
@@ -1020,185 +315,3 @@ function fnrgctamil()
 
 <!-- <script> window.location.href=window.location.href </script> -->
 
-[]
-[]
-[u'1', u'ABIRAMI NAGAR', <a href="javascript:fnSubmit2('P','24  ')">1</a>]
-[]
-[u'2', u'ABIRAMI NAGAR', <a href="javascript:fnSubmit2('P','59  ')">27</a>]
-[]
-[u'3', u'ASHOK NAGAR (EAST)', <a href="javascript:fnSubmit2('P','84  ')">268</a>]
-[]
-[u'4', u'ASHOK NAGAR WEST', <a href="javascript:fnSubmit2('P','33  ')">115</a>]
-[]
-[u'5', u'ASHOK NAGAR WEST,NORTH', <a href="javascript:fnSubmit2('P','21  ')">328</a>]
-[]
-[u'6', u'ASHOK NAGER FIRST FLOOR', <a href="javascript:fnSubmit2('P','101 ')">3</a>]
-[]
-[u'7', u'BALAN NAGAR', <a href="javascript:fnSubmit2('P','55  ')">197</a>]
-[]
-[u'8', u'BHARATHI NAGAR', <a href="javascript:fnSubmit2('P','48  ')">92</a>]
-[]
-[u'9', u'CHERAN NAGAR', <a href="javascript:fnSubmit2('P','82  ')">55</a>]
-[]
-[u'10', u'CHERAN NAGAR A B C EXTN', <a href="javascript:fnSubmit2('P','53  ')">221</a>]
-[]
-[u'11', u'CHERAN NAGAR BACKSIDE', <a href="javascript:fnSubmit2('P','63  ')">79</a>]
-[]
-[u'12', u'CHOZHAN NAGAR ', <a href="javascript:fnSubmit2('P','5   ')">57</a>]
-[]
-[u'13', u'COOPERATIVE COLONY', <a href="javascript:fnSubmit2('P','49  ')">81</a>]
-[]
-[u'14', u'DEVI GARDEN', <a href="javascript:fnSubmit2('P','7   ')">47</a>]
-[]
-[u'15', u'DOCTOR NAGAR', <a href="javascript:fnSubmit2('P','66  ')">11</a>]
-[]
-[u'16', u'GANDHI NAGAR (CHERAN NAGAR BACK)', <a href="javascript:fnSubmit2('P','67  ')">19</a>]
-[]
-[u'17', u'GOUNDAMPALAYAM', <a href="javascript:fnSubmit2('P','20  ')">4</a>]
-[]
-[u'18', u'I T I NAGAR AND BACKSIDE', <a href="javascript:fnSubmit2('P','79  ')">75</a>]
-[]
-[u'19', u'JAWAHAR NAGAR', <a href="javascript:fnSubmit2('P','4   ')">71</a>]
-[]
-[u'20', u'JAYAM NAGAR', <a href="javascript:fnSubmit2('P','9   ')">87</a>]
-[]
-[u'21', u'JEM NAGAR', <a href="javascript:fnSubmit2('P','36  ')">12</a>]
-[]
-[u'22', u'JOSEPH NAGAR', <a href="javascript:fnSubmit2('P','62  ')">3</a>]
-[]
-[u'23', u'JOSEPH NAGAR', <a href="javascript:fnSubmit2('P','87  ')">9</a>]
-[]
-[u'24', u'K M RAMASAMY NAGAR', <a href="javascript:fnSubmit2('P','77  ')">24</a>]
-[]
-[u'25', u'KALIYAMMAL NAGAR', <a href="javascript:fnSubmit2('P','64  ')">14</a>]
-[]
-[u'26', u'KALIYAPPAN NAGAR', <a href="javascript:fnSubmit2('P','71  ')">7</a>]
-[]
-[u'27', u'KALPANA THEATRE BACK SIDE', <a href="javascript:fnSubmit2('P','88  ')">8</a>]
-[]
-[u'28', u'KANNAMMAL NAGAR', <a href="javascript:fnSubmit2('P','15  ')">64</a>]
-[]
-[u'29', u'KANNANAMMAL NAGAR', <a href="javascript:fnSubmit2('P','46  ')">12</a>]
-[]
-[u'30', u'KANNIYA NAGAR', <a href="javascript:fnSubmit2('P','11  ')">52</a>]
-[]
-[u'31', u'KANTHA KONAR NAGAR', <a href="javascript:fnSubmit2('P','10  ')">69</a>]
-[]
-[u'32', u'KINATHU THOTTAM', <a href="javascript:fnSubmit2('P','25  ')">1</a>]
-[]
-[u'33', u'LAKSHMI NAGAR', <a href="javascript:fnSubmit2('P','22  ')">31</a>]
-[]
-[u'34', u'LAUREL SCHOOL ROAD', <a href="javascript:fnSubmit2('P','50  ')">20</a>]
-[]
-[u'35', u'M. K. P. GARDEN', <a href="javascript:fnSubmit2('P','76  ')">16</a>]
-[]
-[u'36', u'M.T.P.ROAD', <a href="javascript:fnSubmit2('P','65  ')">30</a>]
-[]
-[u'37', u'MAHALAKSHMI NAGAR', <a href="javascript:fnSubmit2('P','72  ')">7</a>]
-[]
-[u'38', u'MAHARAJA AVENUE (VAIKO NAGAR)', <a href="javascript:fnSubmit2('P','8   ')">20</a>]
-[]
-[u'39', u'MANAL THOTTAM', <a href="javascript:fnSubmit2('P','70  ')">16</a>]
-[]
-[u'40', u'MANIYAKARA THOTTAM', <a href="javascript:fnSubmit2('P','23  ')">3</a>]
-[]
-[u'41', u'MCP NAGAR', <a href="javascript:fnSubmit2('P','43  ')">26</a>]
-[]
-[u'42', u'MEENAKSHI NAGAR', <a href="javascript:fnSubmit2('P','34  ')">2</a>]
-[]
-[u'43', u'MEIKANDAAR STREET', <a href="javascript:fnSubmit2('P','78  ')">1</a>]
-[]
-[u'44', u'MTP ROAD', <a href="javascript:fnSubmit2('P','92  ')">169</a>]
-[]
-[u'45', u'MULLAI NAGAR', <a href="javascript:fnSubmit2('P','29  ')">75</a>]
-[]
-[u'46', u'MUNICIPALITY  OFFICE BACK SIDE', <a href="javascript:fnSubmit2('P','17  ')">11</a>]
-[]
-[u'47', u'MURUGAN NAGAR', <a href="javascript:fnSubmit2('P','89  ')">190</a>]
-[]
-[u'48', u'MURUGAN NAGAR EXTN,', <a href="javascript:fnSubmit2('P','85  ')">3</a>]
-[]
-[u'49', u'NAGAPPA COLONY', <a href="javascript:fnSubmit2('P','57  ')">75</a>]
-[]
-[u'50', u'NEW BALAJI NAGAR', <a href="javascript:fnSubmit2('P','38  ')">21</a>]
-[]
-[u'51', u'ONAPPALAYAM ROAD ', <a href="javascript:fnSubmit2('P','96  ')">1</a>]
-[]
-[u'52', u'PANCHAYAT OFFICE ROAD', <a href="javascript:fnSubmit2('P','35  ')">41</a>]
-[]
-[u'53', u'PERIYAKADU STREET 1,2', <a href="javascript:fnSubmit2('P','44  ')">193</a>]
-[]
-[u'54', u'PREM AVENUE - SAKTHI NAGAR', <a href="javascript:fnSubmit2('P','3   ')">14</a>]
-[]
-[u'55', u'PRIME AVENUE', <a href="javascript:fnSubmit2('P','13  ')">22</a>]
-[]
-[u'56', u'RAJU NAGAR', <a href="javascript:fnSubmit2('P','28  ')">7</a>]
-[]
-[u'57', u'RAM NAGAR', <a href="javascript:fnSubmit2('P','45  ')">73</a>]
-[]
-[u'58', u'RAMASAMY NAGAR', <a href="javascript:fnSubmit2('P','73  ')">5</a>]
-[]
-[u'59', u'RANGA GARDENS', <a href="javascript:fnSubmit2('P','39  ')">9</a>]
-[]
-[u'60', u'RENU GOUNDER LANE', <a href="javascript:fnSubmit2('P','86  ')">2</a>]
-[]
-[u'61', u'S P NAGAR', <a href="javascript:fnSubmit2('P','2   ')">198</a>]
-[]
-[u'62', u'SAKTHI GARDEN', <a href="javascript:fnSubmit2('P','47  ')">101</a>]
-[]
-[u'63', u'SAKTHI GARDENS - II', <a href="javascript:fnSubmit2('P','40  ')">26</a>]
-[]
-[u'64', u'SARAVANA NAGAR', <a href="javascript:fnSubmit2('P','54  ')">108</a>]
-[]
-[u'65', u'SIVA NAGAR', <a href="javascript:fnSubmit2('P','19  ')">17</a>]
-[]
-[u'66', u'SIVA NAGAR', <a href="javascript:fnSubmit2('P','56  ')">131</a>]
-[]
-[u'67', u'SP NAGAR (BACK SIDE)', <a href="javascript:fnSubmit2('P','32  ')">2</a>]
-[]
-[u'68', u'SPM GARDEN', <a href="javascript:fnSubmit2('P','75  ')">2</a>]
-[]
-[u'69', u'SPM NAGAR', <a href="javascript:fnSubmit2('P','26  ')">13</a>]
-[]
-[u'70', u'SPM NAGAR', <a href="javascript:fnSubmit2('P','69  ')">25</a>]
-[]
-[u'71', u'SPR HOMES', <a href="javascript:fnSubmit2('P','74  ')">10</a>]
-[]
-[u'72', u'SRI NAGAR', <a href="javascript:fnSubmit2('P','12  ')">109</a>]
-[]
-[u'73', u'SRI RAM THIRUVENGADAM NAGAR', <a href="javascript:fnSubmit2('P','6   ')">7</a>]
-[]
-[u'74', u'SRI SAKTHI GARDEN', <a href="javascript:fnSubmit2('P','37  ')">46</a>]
-[]
-[u'75', u'ST. JOSEPHS NAGAR', <a href="javascript:fnSubmit2('P','95  ')">9</a>]
-[]
-[u'76', u'SUBBAIAH GOUNDER THOTTOM', <a href="javascript:fnSubmit2('P','93  ')">3</a>]
-[]
-[u'77', u'T.V.S NAGAR ROAD', <a href="javascript:fnSubmit2('P','14  ')">88</a>]
-[]
-[u'78', u'THAMARAI NAGAR', <a href="javascript:fnSubmit2('P','91  ')">86</a>]
-[]
-[u'79', u'THENDRAL NAGAR (MANAL THOTTAM)', <a href="javascript:fnSubmit2('P','80  ')">162</a>]
-[]
-[u'80', u'THIRUVALLUVAR NAGAR', <a href="javascript:fnSubmit2('P','61  ')">5</a>]
-[]
-[u'81', u'THIYAGI ST', <a href="javascript:fnSubmit2('P','1   ')">33</a>]
-[]
-[u'82', u'UNION ROAD', <a href="javascript:fnSubmit2('P','99  ')">3</a>]
-[]
-[u'83', u'UNION ROAD (NORTH),ISWARIYA MARUDAM APPT', <a href="javascript:fnSubmit2('P','94  ')">78</a>]
-[]
-[u'84', u'VAIKO NAGAR', <a href="javascript:fnSubmit2('P','41  ')">9</a>]
-[]
-[u'85', u'VENKIDASAMY NAGAR (MPT ROAD)', <a href="javascript:fnSubmit2('P','81  ')">8</a>]
-[]
-[u'86', u'VINAIYAGAR KOVIL ST', <a href="javascript:fnSubmit2('P','18  ')">1</a>]
-[]
-[u'87', u'VKN NAGAR', <a href="javascript:fnSubmit2('P','31  ')">1</a>]
-[]
-[u'88', u'z', <a href="javascript:fnSubmit2('P','52  ')">1</a>]
-[]
-[u'89', u'z', <a href="javascript:fnSubmit2('P','83  ')">2</a>]
-[]
-[<b>TOTAL</b>, u'4480']
-[]

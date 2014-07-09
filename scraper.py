@@ -7,10 +7,11 @@ import requests
 import time
 from BeautifulSoup import BeautifulSoup
 import dataset
+import time
 
 zones = {"East":"01","West":"02","South":"03","North":"04","Central":"05"}
 wards_east = {}
-db = dataset.connect('sqlite:///./database/ccmc.sqlite')
+db = dataset.connect('sqlite:////home/thej/Desktop/ccmc.sqlite')
 db.begin()
 print "1. Getting ward info"
 
@@ -110,3 +111,81 @@ while 1:
     db_streets_table= db['streets']
     db_streets_table.insert_many(all_street_data)
     db.commit()
+
+print "3. Getting Property Tax"
+all_property_tax = []
+while 1:
+    while_continue = False
+    all_street_data = []
+    get_street = db.query('SELECT street_id, ward_no FROM streets  where (street_id || ward_no) not in (select street_id || ward_no from property_tax)  LIMIT 1')
+
+    zone_id = ""
+    ward_no = ""
+    street_id = ""
+    hdnCode = ""
+
+    for street in get_street:
+        street_id = street['street_id']
+        ward_no = street['ward_no']
+        while_continue  = True
+    db.commit()    
+
+    if while_continue:
+        pass
+    else:
+        print "\t --No Streets to continue..."
+        break
+
+    ward = db_ward_table.find_one(ward_no=ward_no)
+    zone_id = ward['zone_id'] 
+
+    ward_code = str("WD-"+ward_no)
+    hdnCode = zone_id + "'^" + ward_code
+    hdnCode = hdnCode + "'^" + street_id ;
+    print hdnCode
+    tax_page_url = "https://payment.ccmc.gov.in/repAssesseeDet1.asp?type=P"
+    payload = {'hdnCode':  str(hdnCode)} 
+    user_agent = {'User-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36','Referer':'https://www.ksndmc.org/Reservoir_Details.aspx','Content-Type':'application/x-www-form-urlencoded','Origin':'https://www.ksndmc.org','Host':'www.ksndmc.org','Accept-Encoding':'gzip,deflate,sdch','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'}        
+    html_post_src = requests.get(tax_page_url,data=payload, headers = user_agent)
+    #print html_post_src.content
+    soup = BeautifulSoup(html_post_src.content)
+    main_div = soup.findAll(id="d1")
+    #print len(main_div[0].contents)
+    #print main_div[0].contents[8]
+    main_table = ((main_div[0].contents)[8]).contents[1].contents[0].contents[1]
+    print main_table
+    for rows in main_table:
+        break_row = False
+        column_values = []
+        if rows != None:
+            if str(rows).strip() != "":
+                #print rows.contents
+                for columns in rows.contents:
+                    #print columns
+                    if str(columns) == '<th align="center" class="title" title="#">#</th>':
+                        break_row = True
+                        continue
+                    if str(columns).strip() == "" or str(columns) == "\n" :
+                        continue
+                    else:
+                        column_values.append(columns.contents[0])
+                if break_row:
+                    continue
+        #print column_values
+        if len(column_values) > 2:
+            ward      = (str(column_values[1]))
+            asst_no   = str(column_values[2].contents[0].contents[0])
+            name_address = ((column_values[3]).getText())
+            category = str((column_values[4]))
+            half_yearly_tax = str((column_values[5]))
+            penalty = str((column_values[6]))
+            total = str((column_values[7]))
+            type_of_building = str((column_values[8]))
+            insert_data = dict({"ward_no":str(ward_no), "street_id":street_id,  "asst_no":asst_no, "name_address":name_address, "category":category, "half_yearly_tax":half_yearly_tax,"penalty":penalty, "total":total, "type_of_building":type_of_building})
+            print insert_data
+            all_property_tax.append(insert_data)
+    db.commit()    
+    db_property_tax= db['property_tax']
+    db_property_tax.insert_many(all_property_tax)
+    db.commit()
+    time.sleep(3)

@@ -1,264 +1,392 @@
-Now for zone=West
-+++++++++++++++++++++++++++++++++++++++++++++=
-[<body>
-<div id="container">
-<div id="header">
-<div id="logo"></div>
-<div id="search" style="display:none">
-<table border="0" cellpadding="0" cellspacing="1" width="100%">
-<tr><td nowrap="nowrap">
-<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=45&amp;Itemid=40" id="active_menu">Home</a>
-<span class="mainlevel"> | </span>
-<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=24&amp;Itemid=38">Sitemap</a>
-<span class="mainlevel"> | </span>
-<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=58&amp;Itemid=43">Contacts</a>
-</td></tr></table>
-<form action="index.php" method="post">
-<div class="search">
-<input alt="Search" class="inputbox" id="mod_search_searchword" maxlength="20" name="searchword" onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" size="20" type="text" value="search..."/>
-</div>
-</form>
-</div>
-<div id="social-net" style="display:none"><a href="http://www.facebook.com/pages/Cbecorp/187855327919362" target="_blank"><img src="images/facebook-icon.png"/></a>   <a href="http://twitter.com/Cbecorp" target="_blank"><img src="images/twitter-icon.png"/></a></div>
-</div>
-<div id="menu">
-<div class="chromestyle" id="chromemenu">
-<ul>
-<li><a href="https://www.ccmc.gov.in/ccmc/index.php">Home</a></li>
-<!--	<li><a href="MyCorpServiceTax.asp">My Taxes</a></li>
-		<li><a href="#" rel="dropmenu2">Development Works</a></li>-->
-<li><a href="#" rel="dropmenu3">Revenue Items</a></li>
-<li><a href="#" rel="dropmenu4">Collections</a></li>
-<!-- 	<li><a href="#" rel="dropmenu5">Collection Centers</a></li>		 -->
-<li><a href="#" rel="dropmenu6">Transactions</a></li>
-<li><a href="frmAdditionalHome.asp">Reports</a></li>
-<li><a href="#" rel="dropmenu7">DCB</a></li>
-<li><a href="frmlegallogout.asp">Sign out</a></li>
-</ul>
-</div>
-<!--2nd drop down menu -->
-<div class="dropmenudiv" id="dropmenu2" style="width: 250px;">
-<a href="frmOngoingWorks.asp">Ongoing Works</a>
-<a href="frmOngoingWorksByOff.asp">Ongoing Works By Ward</a>
-<a href="frmCompletedWorks.asp">Completed Works</a>
-<a href="frmCompletedWorksByOff.asp">Completed Works By Ward </a>
-<a href="frmfinyearwisecompletedworks.asp">Completed Works By Financial Year</a>
-<a href="frmGenAbsractList.asp">General Abstract</a>
-<a href="frmAeJeWorks.asp">Works By  AE / JE</a>
-<a href="frmDetailedDevelopmentWorks.asp">Detailed Work Report</a>
-<a href="frmWorkAbstract.asp">Detailed Work Abstract</a>
-<a href="repDateWiseReport.asp">Ongoing Works Entry - Between Date</a>
-<a href="frmBillPendingCompleted.asp">Bill - Detailed Report</a>
-<a href="frmTenderAllotView.asp">Tender Results</a>
-<a href="frmTenderView.asp">Tender Announcement</a>
-<a href="frmCSanction.asp">C - Sanction Details</a>
-<a href="javascript:fnrgctamil()">List of Registered Contractors</a>
-<a href="frmjnnurm.asp">JNNURM <img src="images/neww.gif"/> </a>
-<a href="frmViewPlumber.asp">Plumbers List</a>
-<a href="frmCompletedWorks1.asp">Completed Works Before 2005-2006</a>
-</div>
-<!--3rd drop down menu -->
-<div class="dropmenudiv" id="dropmenu3" style="width: 250px;">
-<a href="repAssesseeDet.asp?type=P">Property Tax</a>
-<a href="repAssesseeDet.asp?type=W">Water Charges</a>
-<a href="repVLTDet.asp">Vacant Land Tax</a>
-<a href="repNTDet.asp">Non Tax</a>
-<a href="repNTDet_exe.asp">Non Tax-Excluding Govt Item &amp; Court Case</a>
-<a href="repNTDet_court.asp">Non Tax Court Case</a>
-<a href="repNTDet_Govt.asp">Non Tax Govt Item</a>
-<a href="repNTDet_TNEB.asp">Non Tax TNEB</a>
-<a href="repNTDet_Arrear.asp">Non Tax-Demolished</a>
-<a href="repNTDet_1.asp">Non Tax Annual Lease Item</a>
-<a href="RepPFTDet.asp">Professional Tax</a>
-<a href="RepDNOTrade.asp">D&amp;O Trades</a>
-<a href="RepPFATradeDet.asp">PFA Trades</a>
-<a href="repNTDet_.asp">MISC-1045(7) Garbage</a>
-<a href="repNTDet_FA.asp">Bus Shelter</a>
-<a href="repNTDet_FP.asp">Foot Path</a>
-<a href="repNTDet_OFC.asp">1100(2) - Annual Track Rent Optic Cables</a>
-</div>
-<!--4rd drop down menu -->
-<div class="dropmenudiv" id="dropmenu4" style="width: 250px;">
-<a href="frmBankSelection.asp">Bankwise</a>
-<a href="frmFECSelectiont.asp">Facilitation Centerwise</a>
-<a href="frmZoneSelection1_newt.asp">Zonewise</a>
-<a href="frmZoneWiseBankSelection.asp">Zonewise - Bank</a>
-<a href="frmWardSelection.asp">Wardwise</a>
-<a href="frmColServiceSelection.asp">Servicewise</a>
-<a href="frmbreakupview.asp">Break Up View</a>
-<a href="cbrv.asp">BRV Statements</a>
-<a href="repOverAllCollection.asp">Overall Collection</a>
-<a href="frmFECSelectionCC.asp">Credit Card Collection</a>
-<a href="repipay.asp">I.P.G Collection</a>
-</div>
-<!--5rd drop down menu -->
-<!-- 	<div id="dropmenu5" class="dropmenudiv" style="width: 250px;">
-						
-			<a href="frmVwBanks.asp">List of Banks</a>
-			<a href="frmVwFEC.asp">Facilitation Centers</a>
-			<a href="frmCreditCardCenters.asp">Credit Card Collection Centers</a>
-		</div> -->
-<!--6rd drop down menu -->
-<div class="dropmenudiv" id="dropmenu6" style="width: 250px;">
-<a href="FrmVwServiceTransaction.asp">Datewise</a>
-<a href="frmCollectionsReport.asp">Monthwise</a>
-<a href="FrmVwTransactionsByBank.asp">Bankwise</a>
-<a href="FrmVwTransactionsByFc.asp">Facilitation Centerwise</a>
-<a href="frmColCompSelection.asp">Collection Comparisions</a>
-</div>
-<!--7rd drop down menu -->
-<div class="dropmenudiv" id="dropmenu7" style="width: 250px;">
-<a href="frmsdcb.asp">YEAR WISE DCB</a>
-<a href="frmsdcbwd.asp">WARD WISE DCB</a>
-<a href="frmsdcb1213new_.asp">SUPPLEMENTARY DCB</a>
-<a href="dcblogin.asp">DCB RUN</a>
-<a href="dcb1new.asp">SUPPLEMENTARY DCB RUN</a>
-</div>
-<script type="text/javascript">
-
-		cssdropdown.startchrome("chromemenu")
-
-		</script>
-</div>
-<div id="bgdivId" style="display:none;"><img src="images/ccmc-bg1.jpg"/></div>
-<script type="text/javascript">
-		if(document.URL!=null && document.URL!=undefined
-			&& document.URL.indexOf("pageheader1.asp")>0)
-		{
-			document.getElementById("bgdivId").style.display = "";            
-		}else{
-			document.getElementById("bgdivId").style.display = "none";
-		}
-	</script>
-</div></body>]
-<body>
-<div id="container">
-<div id="header">
-<div id="logo"></div>
-<div id="search" style="display:none">
-<table border="0" cellpadding="0" cellspacing="1" width="100%">
-<tr><td nowrap="nowrap">
-<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=45&amp;Itemid=40" id="active_menu">Home</a>
-<span class="mainlevel"> | </span>
-<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=24&amp;Itemid=38">Sitemap</a>
-<span class="mainlevel"> | </span>
-<a class="mainlevel" href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=58&amp;Itemid=43">Contacts</a>
-</td></tr></table>
-<form action="index.php" method="post">
-<div class="search">
-<input alt="Search" class="inputbox" id="mod_search_searchword" maxlength="20" name="searchword" onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" size="20" type="text" value="search..."/>
-</div>
-</form>
-</div>
-<div id="social-net" style="display:none"><a href="http://www.facebook.com/pages/Cbecorp/187855327919362" target="_blank"><img src="images/facebook-icon.png"/></a>   <a href="http://twitter.com/Cbecorp" target="_blank"><img src="images/twitter-icon.png"/></a></div>
-</div>
-<div id="menu">
-<div class="chromestyle" id="chromemenu">
-<ul>
-<li><a href="https://www.ccmc.gov.in/ccmc/index.php">Home</a></li>
-<!--	<li><a href="MyCorpServiceTax.asp">My Taxes</a></li>
-		<li><a href="#" rel="dropmenu2">Development Works</a></li>-->
-<li><a href="#" rel="dropmenu3">Revenue Items</a></li>
-<li><a href="#" rel="dropmenu4">Collections</a></li>
-<!-- 	<li><a href="#" rel="dropmenu5">Collection Centers</a></li>		 -->
-<li><a href="#" rel="dropmenu6">Transactions</a></li>
-<li><a href="frmAdditionalHome.asp">Reports</a></li>
-<li><a href="#" rel="dropmenu7">DCB</a></li>
-<li><a href="frmlegallogout.asp">Sign out</a></li>
-</ul>
-</div>
-<!--2nd drop down menu -->
-<div class="dropmenudiv" id="dropmenu2" style="width: 250px;">
-<a href="frmOngoingWorks.asp">Ongoing Works</a>
-<a href="frmOngoingWorksByOff.asp">Ongoing Works By Ward</a>
-<a href="frmCompletedWorks.asp">Completed Works</a>
-<a href="frmCompletedWorksByOff.asp">Completed Works By Ward </a>
-<a href="frmfinyearwisecompletedworks.asp">Completed Works By Financial Year</a>
-<a href="frmGenAbsractList.asp">General Abstract</a>
-<a href="frmAeJeWorks.asp">Works By  AE / JE</a>
-<a href="frmDetailedDevelopmentWorks.asp">Detailed Work Report</a>
-<a href="frmWorkAbstract.asp">Detailed Work Abstract</a>
-<a href="repDateWiseReport.asp">Ongoing Works Entry - Between Date</a>
-<a href="frmBillPendingCompleted.asp">Bill - Detailed Report</a>
-<a href="frmTenderAllotView.asp">Tender Results</a>
-<a href="frmTenderView.asp">Tender Announcement</a>
-<a href="frmCSanction.asp">C - Sanction Details</a>
-<a href="javascript:fnrgctamil()">List of Registered Contractors</a>
-<a href="frmjnnurm.asp">JNNURM <img src="images/neww.gif"/> </a>
-<a href="frmViewPlumber.asp">Plumbers List</a>
-<a href="frmCompletedWorks1.asp">Completed Works Before 2005-2006</a>
-</div>
-<!--3rd drop down menu -->
-<div class="dropmenudiv" id="dropmenu3" style="width: 250px;">
-<a href="repAssesseeDet.asp?type=P">Property Tax</a>
-<a href="repAssesseeDet.asp?type=W">Water Charges</a>
-<a href="repVLTDet.asp">Vacant Land Tax</a>
-<a href="repNTDet.asp">Non Tax</a>
-<a href="repNTDet_exe.asp">Non Tax-Excluding Govt Item &amp; Court Case</a>
-<a href="repNTDet_court.asp">Non Tax Court Case</a>
-<a href="repNTDet_Govt.asp">Non Tax Govt Item</a>
-<a href="repNTDet_TNEB.asp">Non Tax TNEB</a>
-<a href="repNTDet_Arrear.asp">Non Tax-Demolished</a>
-<a href="repNTDet_1.asp">Non Tax Annual Lease Item</a>
-<a href="RepPFTDet.asp">Professional Tax</a>
-<a href="RepDNOTrade.asp">D&amp;O Trades</a>
-<a href="RepPFATradeDet.asp">PFA Trades</a>
-<a href="repNTDet_.asp">MISC-1045(7) Garbage</a>
-<a href="repNTDet_FA.asp">Bus Shelter</a>
-<a href="repNTDet_FP.asp">Foot Path</a>
-<a href="repNTDet_OFC.asp">1100(2) - Annual Track Rent Optic Cables</a>
-</div>
-<!--4rd drop down menu -->
-<div class="dropmenudiv" id="dropmenu4" style="width: 250px;">
-<a href="frmBankSelection.asp">Bankwise</a>
-<a href="frmFECSelectiont.asp">Facilitation Centerwise</a>
-<a href="frmZoneSelection1_newt.asp">Zonewise</a>
-<a href="frmZoneWiseBankSelection.asp">Zonewise - Bank</a>
-<a href="frmWardSelection.asp">Wardwise</a>
-<a href="frmColServiceSelection.asp">Servicewise</a>
-<a href="frmbreakupview.asp">Break Up View</a>
-<a href="cbrv.asp">BRV Statements</a>
-<a href="repOverAllCollection.asp">Overall Collection</a>
-<a href="frmFECSelectionCC.asp">Credit Card Collection</a>
-<a href="repipay.asp">I.P.G Collection</a>
-</div>
-<!--5rd drop down menu -->
-<!-- 	<div id="dropmenu5" class="dropmenudiv" style="width: 250px;">
-						
-			<a href="frmVwBanks.asp">List of Banks</a>
-			<a href="frmVwFEC.asp">Facilitation Centers</a>
-			<a href="frmCreditCardCenters.asp">Credit Card Collection Centers</a>
-		</div> -->
-<!--6rd drop down menu -->
-<div class="dropmenudiv" id="dropmenu6" style="width: 250px;">
-<a href="FrmVwServiceTransaction.asp">Datewise</a>
-<a href="frmCollectionsReport.asp">Monthwise</a>
-<a href="FrmVwTransactionsByBank.asp">Bankwise</a>
-<a href="FrmVwTransactionsByFc.asp">Facilitation Centerwise</a>
-<a href="frmColCompSelection.asp">Collection Comparisions</a>
-</div>
-<!--7rd drop down menu -->
-<div class="dropmenudiv" id="dropmenu7" style="width: 250px;">
-<a href="frmsdcb.asp">YEAR WISE DCB</a>
-<a href="frmsdcbwd.asp">WARD WISE DCB</a>
-<a href="frmsdcb1213new_.asp">SUPPLEMENTARY DCB</a>
-<a href="dcblogin.asp">DCB RUN</a>
-<a href="dcb1new.asp">SUPPLEMENTARY DCB RUN</a>
-</div>
-<script type="text/javascript">
-
-		cssdropdown.startchrome("chromemenu")
-
-		</script>
-</div>
-<div id="bgdivId" style="display:none;"><img src="images/ccmc-bg1.jpg"/></div>
-<script type="text/javascript">
-		if(document.URL!=null && document.URL!=undefined
-			&& document.URL.indexOf("pageheader1.asp")>0)
-		{
-			document.getElementById("bgdivId").style.display = "";            
-		}else{
-			document.getElementById("bgdivId").style.display = "none";
-		}
-	</script>
-</div></body>
+1. Getting ward info
+	 --Ward info exists. Not getting.
+2. Get Street info for each ward
+	 --No wards to continue...
+3. Getting Property Tax
+02'^WD-05'^22
+<table border="0" cellpadding="0" cellspacing="2" class="tableStyle">
+<tr>
+<th align="center" class="title" title="#">#</th>
+<th align="center" class="title" title="Ward">Ward</th>
+<th align="center" class="title">Asst No.</th>
+<th align="center" class="title" title="Assessee Name &amp; Address">Name&Address;</th>
+<th align="center" class="title" title="Category">Category</th>
+<th align="center" class="title" title="Half-Yearly Tax Amount">Half-Yearly<br />Tax(in Rs.)</th>
+<th align="center" class="title" title="Penalty">Penalty<br />(in Rs.)</th>
+<th align="center" class="title" title="Total Amount">Total<br />(in Rs.)</th>
+<th align="center" class="title" title="Total Amount">Type of Building</th>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">1</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','513488','02','WD-05','Property')" title="Click here to view the dues">513488</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">T.JAYARAJ BABU &amp;S.GARMEL; ASUNTHAMARY,<br />2,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">384.00</td>
+<td align="right">0.00</td>
+<td align="right">384.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">2</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','514517','02','WD-05','Property')" title="Click here to view the dues">514517</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">K.CHANDRAN KITT ,<br />00,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">452.00</td>
+<td align="right">0.00</td>
+<td align="right">452.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">3</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','514898','02','WD-05','Property')" title="Click here to view the dues">514898</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">SURESH KUMAR,<br />SITE NO 12,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">443.00</td>
+<td align="right">0.00</td>
+<td align="right">443.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">4</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','514961','02','WD-05','Property')" title="Click here to view the dues">514961</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">G.D.SAM JACOB,<br />6A,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">453.00</td>
+<td align="right">0.00</td>
+<td align="right">453.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">5</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','515610','02','WD-05','Property')" title="Click here to view the dues">515610</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">B.RAJENDRAN,<br />SITE NO 8,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">306.00</td>
+<td align="right">0.00</td>
+<td align="right">306.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">6</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','516503','02','WD-05','Property')" title="Click here to view the dues">516503</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">R. AALAN,<br />1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">408.00</td>
+<td align="right">0.00</td>
+<td align="right">408.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">7</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','516593','02','WD-05','Property')" title="Click here to view the dues">516593</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">R. RAVINDRAN SURYAPRAPAVATHI,<br />1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">408.00</td>
+<td align="right">0.00</td>
+<td align="right">408.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">8</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','516669','02','WD-05','Property')" title="Click here to view the dues">516669</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">SANJAYKUMAR, VEENA SANJAYKUMAR,<br />1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">850.00</td>
+<td align="right">0.00</td>
+<td align="right">850.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">9</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','516910','02','WD-05','Property')" title="Click here to view the dues">516910</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">ASHA PADMASHINI RAJKUMAR,<br />1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">567.00</td>
+<td align="right">0.00</td>
+<td align="right">567.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">10</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','517183','02','WD-05','Property')" title="Click here to view the dues">517183</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">D. SUNIL,<br />5-1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">750.00</td>
+<td align="right">0.00</td>
+<td align="right">750.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">11</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','517292','02','WD-05','Property')" title="Click here to view the dues">517292</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">M.SUKUMAR,<br />2/7,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">233.00</td>
+<td align="right">0.00</td>
+<td align="right">233.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">12</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','517351','02','WD-05','Property')" title="Click here to view the dues">517351</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">P. RAVETHI,<br />2/,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">605.00</td>
+<td align="right">0.00</td>
+<td align="right">605.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">13</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','517352','02','WD-05','Property')" title="Click here to view the dues">517352</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">P. REVATHI,<br />2/,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">1,221.00</td>
+<td align="right">0.00</td>
+<td align="right">1,221.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">14</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','519123','02','WD-05','Property')" title="Click here to view the dues">519123</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">D.KUPPUSAMI,<br />33-1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">682.00</td>
+<td align="right">0.00</td>
+<td align="right">682.00</td>
+<td align="right" nowrap="nowrap">ZONE - B(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">15</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','519124','02','WD-05','Property')" title="Click here to view the dues">519124</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">D.KUPPUSAMI,<br />33-2,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">682.00</td>
+<td align="right">0.00</td>
+<td align="right">682.00</td>
+<td align="right" nowrap="nowrap">ZONE - B(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">16</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','519861','02','WD-05','Property')" title="Click here to view the dues">519861</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">K.V.PARAMESWARAN,<br />59-1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">2,386.00</td>
+<td align="right">0.00</td>
+<td align="right">2,386.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">17</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','519862','02','WD-05','Property')" title="Click here to view the dues">519862</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">K.V.PARAMESWARAN,<br />59-2,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">911.00</td>
+<td align="right">0.00</td>
+<td align="right">911.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">18</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','520731','02','WD-05','Property')" title="Click here to view the dues">520731</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">S.ESWARA MOORTHY &amp; E.SIVAGAMI,<br />12,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">1,859.00</td>
+<td align="right">0.00</td>
+<td align="right">1,859.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">19</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','520732','02','WD-05','Property')" title="Click here to view the dues">520732</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">S.ESWAR MOORTHY &amp; E.SIVAGAMI,<br />12-1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">1,045.00</td>
+<td align="right">0.00</td>
+<td align="right">1,045.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">20</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','520854','02','WD-05','Property')" title="Click here to view the dues">520854</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">M.KUMAR,<br />30,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">1,220.00</td>
+<td align="right">0.00</td>
+<td align="right">1,220.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">21</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','520855','02','WD-05','Property')" title="Click here to view the dues">520855</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">M.KUMAR,<br />30-1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">871.00</td>
+<td align="right">0.00</td>
+<td align="right">871.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">22</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','521153','02','WD-05','Property')" title="Click here to view the dues">521153</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">MATHAIYAN,<br />29-1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">987.00</td>
+<td align="right">0.00</td>
+<td align="right">987.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">23</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','521154','02','WD-05','Property')" title="Click here to view the dues">521154</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">MATHAIYAN,<br />29-2,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">987.00</td>
+<td align="right">0.00</td>
+<td align="right">987.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">24</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','521155','02','WD-05','Property')" title="Click here to view the dues">521155</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">MATHAIYAN,<br />28-1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">871.00</td>
+<td align="right">0.00</td>
+<td align="right">871.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">25</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','521156','02','WD-05','Property')" title="Click here to view the dues">521156</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">MATHAIYAN,<br />28-2,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">871.00</td>
+<td align="right">0.00</td>
+<td align="right">871.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">26</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','521190','02','WD-05','Property')" title="Click here to view the dues">521190</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">KANNIYAN RATHEESKUMAR,<br />2,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">1,310.00</td>
+<td align="right">0.00</td>
+<td align="right">1,310.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">27</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','521191','02','WD-05','Property')" title="Click here to view the dues">521191</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">KANNAIYAN RATHEESKUMAR,<br />2-1,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">186.00</td>
+<td align="right">0.00</td>
+<td align="right">186.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">28</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','522171','02','WD-05','Property')" title="Click here to view the dues">522171</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">L.SURESH , RATHIKA SURSH,<br />5-5A,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">2,572.00</td>
+<td align="right">0.00</td>
+<td align="right">2,572.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">29</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','522172','02','WD-05','Property')" title="Click here to view the dues">522172</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">L.SURESH, RATHIKASURESH,<br />6-6A,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">2,572.00</td>
+<td align="right">200.00</td>
+<td align="right">2,772.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">30</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','522173','02','WD-05','Property')" title="Click here to view the dues">522173</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">L.SURESH, RATHIKASURESH,<br />7-7A,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">537.00</td>
+<td align="right">0.00</td>
+<td align="right">537.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+<tr>
+<td align="center" width="5%"><font face="Verdana" size="1" color="#000080">31</font></td>
+<td align="center">WD-05
+			</td>
+<td align="center"><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','522422','02','WD-05','Property')" title="Click here to view the dues">522422</a></font></td>
+<td align="left"><font face="Verdana" size="1" color="#000080">A.DHANABALAN,<br />37,<br />LAKSHMI NAGAR,<br />GAVUNDAMPALAYAM</font></td>
+<td align="center" width="3%">C</td>
+<td align="right">752.00</td>
+<td align="right">100.00</td>
+<td align="right">852.00</td>
+<td align="right" nowrap="nowrap">ZONE - C(GOUPALAYAM)</td>
+</tr>
+</table>
+{'name_address': u'T.JAYARAJ BABU &S.GARMEL; ASUNTHAMARY,2,LAKSHMI NAGAR,GAVUNDAMPALAYAM', 'category': 'C', 'type_of_building': 'ZONE - C(GOUPALAYAM)', 'asst_no': '513488', 'ward_no': '05', 'penalty': '0.00', 'street_id': u'22', 'half_yearly_tax': '384.00', 'total': '384.00'}
