@@ -54,4 +54,45 @@ else:
                 print insert_data
                 db_ward_table.insert(insert_data)
 
+print "Get Street info for each ward"
+all_wards = db_ward_table.all()
+for ward in all_wards:
+    zone_id = ward['zone_id']
+    ward_no = str("WD-"+ward['ward_no'])
+    hdnCode = zone_id + "'^" + ward_no
+    street_page_url = "https://payment.ccmc.gov.in/repAssesseeDet.asp?type=P"
+    payload = {'hdnCode':  str(hdnCode)} 
+    user_agent = {'User-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/34.0.1847.116 Chrome/34.0.1847.116 Safari/537.36','Referer':'https://www.ksndmc.org/Reservoir_Details.aspx','Content-Type':'application/x-www-form-urlencoded','Origin':'https://www.ksndmc.org','Host':'www.ksndmc.org','Accept-Encoding':'gzip,deflate,sdch','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'}        
+    html_post_src = requests.get(street_page_url,data=payload, headers = user_agent)
+    print html_post_src.content
+    soup = BeautifulSoup(html_post_src.content)
+    main_div = soup.findAll(id="d1")
+    main_table = ((main_div[0].contents)[2]).contents
+    for rows in main_table:
+        break_row = False
+        column_values = []
+        if rows != None:
+            if str(rows).strip() != "":
+                #print rows.contents
+                for columns in rows.contents:
+                    if str(columns) == '<td rowspan="1" class="title">S.No</td>':
+                        break_row = True
+                        continue
+                    if str(columns).strip() == "" or str(columns) == "\n" :
+                        continue
+                    else:
+                        column_values.append(columns.contents[0])
+                if break_row:
+                    continue
+        print column_values
+        if len(column_values) > 2:
+            street      = str(column_values[1])
+            street_id   = str(column_values[2])
+            no_of_assessees =  (column_values[2]).contents[0]
+
+            #insert_data = dict({"zone":zone_name , "zone_id":str(zone_id) , "ward":""  , "ward_no":str(ward_no), "no_of_assessees":no_of_assessees})
+            #print insert_data
+            
+
+    break
 
