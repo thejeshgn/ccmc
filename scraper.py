@@ -131,9 +131,6 @@ while 1:
     print ward_no
     print street_id
     db.commit()
-    db_streets_table= db['streets']    
-    data_update = dict(property_tax_scraped=1,street_id=street_id, ward_no=ward_no)
-    db_streets_table.update(data_update, ['ward_no','street_id'])
 
     if while_continue:
         pass
@@ -190,10 +187,13 @@ while 1:
             print insert_data
             all_property_tax.append(insert_data)
     db.commit()    
-    if insert_data['asst_no'] != "":
+    db_property_tax= db['property_tax']
+    db_property_tax.insert_many(all_property_tax)
+    db_streets_table= db['streets']    
+    data_update = dict(property_tax_scraped=1,street_id=street_id, ward_no=ward_no)
+    db_streets_table.update(data_update, ['ward_no','street_id'])        
+    db.commit()
+    print "Waiting"
+    time.sleep(10)
 
-        db_property_tax= db['property_tax']
-        db_property_tax.insert_many(all_property_tax)
-        db.commit()
     
-    time.sleep(3)
