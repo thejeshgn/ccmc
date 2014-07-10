@@ -11,7 +11,7 @@ import time
 
 zones = {"East":"01","West":"02","South":"03","North":"04","Central":"05"}
 wards_east = {}
-db = dataset.connect('sqlite:////home/thej/Desktop/ccmc.sqlite')
+db = dataset.connect('sqlite:////media/thej/PNY Hook/ccmc.sqlite')
 db.begin()
 print "1. Getting ward info"
 
@@ -116,8 +116,8 @@ print "3. Getting Property Tax"
 all_property_tax = []
 while 1:
     while_continue = False
-    all_street_data = []
-    get_street = db.query('SELECT street_id, ward_no FROM streets  where (street_id || ward_no) not in (select street_id || ward_no from property_tax)  LIMIT 1')
+    all_property_tax = []
+    get_street = db.query('SELECT street_id, ward_no FROM streets where property_tax_scraped = 0  order by id LIMIT 1')
 
     zone_id = ""
     ward_no = ""
@@ -128,7 +128,12 @@ while 1:
         street_id = street['street_id']
         ward_no = street['ward_no']
         while_continue  = True
-    db.commit()    
+    print ward_no
+    print street_id
+    db.commit()
+    db_streets_table= db['streets']    
+    data_update = dict(property_tax_scraped=1,street_id=street_id, ward_no=ward_no)
+    db_streets_table.update(data_update, ['ward_no','street_id'])
 
     if while_continue:
         pass
@@ -185,7 +190,10 @@ while 1:
             print insert_data
             all_property_tax.append(insert_data)
     db.commit()    
-    db_property_tax= db['property_tax']
-    db_property_tax.insert_many(all_property_tax)
-    db.commit()
+    if insert_data['asst_no'] != "":
+
+        db_property_tax= db['property_tax']
+        db_property_tax.insert_many(all_property_tax)
+        db.commit()
+    
     time.sleep(3)
