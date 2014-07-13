@@ -1,0 +1,11 @@
+common:
+  database: "sqlite:///./database/ccmc.sqlite"
+  prefix: export/
+  format: csv
+
+exports:
+
+  - query: "select w.zone_id, w.zone, w.ward_no, s.street_id, s.street, pt.asst_no, pt.name_address, pt.category, pt.half_yearly_tax, pt.penalty, pt.total, pt.type_of_building from property_tax as pt, streets as s, wards as w where pt.ward_no = s.ward_no and pt.street_id = s.street_id and s.ward_no = w.ward_no "
+    filename: "csv/property_tax.csv"
+    format: csv
+

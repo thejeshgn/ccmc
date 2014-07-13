@@ -8,10 +8,11 @@ import time
 from BeautifulSoup import BeautifulSoup
 import dataset
 import time
+import datetime
 
 zones = {"East":"01","West":"02","South":"03","North":"04","Central":"05"}
 wards_east = {}
-db = dataset.connect('sqlite:////media/thej/PNY Hook/ccmc.sqlite')
+db = dataset.connect('sqlite:////home/thej/Desktop/ccmc.sqlite')
 db.begin()
 print "1. Getting ward info"
 
@@ -186,14 +187,37 @@ while 1:
             insert_data = dict({"ward_no":str(ward_no), "street_id":street_id,  "asst_no":asst_no, "name_address":name_address, "category":category, "half_yearly_tax":half_yearly_tax,"penalty":penalty, "total":total, "type_of_building":type_of_building})
             print insert_data
             all_property_tax.append(insert_data)
-    db.commit()    
-    db_property_tax= db['property_tax']
-    db_property_tax.insert_many(all_property_tax)
+    db.commit()
+    print "size="+str(len(all_property_tax))
+
+
+    try:
+        db_property_tax= db['property_tax']
+        db_property_tax.insert_many(all_property_tax)        
+    except:
+        print "***************** Exception- FAILED MANY -- insert oney by one"
+        i = 1
+        for indiviual_property_tax in all_property_tax:
+            print str(i)
+            try:
+                db_property_tax= db['property_tax']
+                db_property_tax.insert(indiviual_property_tax)
+                
+            except:
+                print "Exception:Data existss"+str(indiviual_property_tax["asst_no"])
+            i= i+ 1
+
+
+    print "Before Updating the streets"
+    db.commit()
+    print "Updating the streets"
     db_streets_table= db['streets']    
     data_update = dict(property_tax_scraped=1,street_id=street_id, ward_no=ward_no)
     db_streets_table.update(data_update, ['ward_no','street_id'])        
     db.commit()
     print "Waiting"
+    print datetime.datetime.now()
     time.sleep(10)
+    print "Getting next>>"
 
     
